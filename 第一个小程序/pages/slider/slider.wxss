@@ -1,0 +1,70 @@
+/* pages/slider/slider.wxss */
+.container{
+    box-sizing: border-box;
+}
+
+.contentContainer{
+    width: 300px;
+    overflow: hidden;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: row
+}
+
+.testAnimated{
+  position: relative;
+  transform: scale(2);
+  transition: 2s;
+}
+
+
+
+.normalUl{
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    height: 200px;
+}
+
+.animateUl{
+    overflow: hidden;
+    position: absolute;
+    transition: left 0.5s;
+    display: flex;
+    height: 100px;
+}
+
+.topViewAnimate{
+    display: flex;
+    -moz-box-shadow: 10px 10px 5px #999999; /* 老的 Firefox */
+    box-shadow: 10px 10px 5px #999999;
+    margin-right: 20px;
+    width: 130px;
+    height: 50px;
+    flex: none;
+    transform: scale(1,1.5)
+}
+
+.topViewNormal{
+    display: flex;
+    -moz-box-shadow: 10px 10px 5px #999999; /* 老的 Firefox */
+    box-shadow: 10px 10px 5px #999999;
+    margin-right: 20px;
+    width: 130px;
+    height: 50px;
+    flex: none;
+    transform: scale(1,1.5);
+}
+
+.downView{
+    display: flex;
+    width: 130px;
+    height: 50px;
+    flex: none;
+    opacity: 0.4;
+    margin-right: 20px;
+}

@@ -1,0 +1,15 @@
+<!--pages/slider/slider.wxml-->
+<view class='container'>
+  <view class='contentContainer'>
+    <view animation="{{animationData}}" bind:touchstart="handleTouchStart" bind:touchend="handleTouchEnd" class='normalUl' style="left:{{left+ 'px'}}">
+    <block wx:for="{{colors}}" wx:for-item="color" wx:key="*index">
+      <view wx:if="{{topIndex != index}}" class='downView' style='background-color:{{color}};'/>
+      <view wx:elif="{{animate}}"  class='topViewAnimate' style='background-color:{{color}};'/>
+      <view wx:else class='topViewNormal' style='background-color:{{color}};'/>
+    </block>
+    </view>
+    
+  </view>
+</view>
+
+
